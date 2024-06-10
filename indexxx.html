@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .gallery-container {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 10px;
+        }
+
+        .gallery-item {
+            background-color: #ccc;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            padding-bottom: 100%;
+            position: relative;
+        }
+
+        .gallery-item span {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        p {
+            margin-top: 20px;
+            text-align: justify;
+        }
+
+        @media (max-width: 1024px) {
+            .gallery-container {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .gallery-container {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="gallery-container">
+        <div class="gallery-item"><span>1</span></div>
+        <div class="gallery-item"><span>2</span></div>
+        <div class="gallery-item"><span>3</span></div>
+        <div class="gallery-item"><span>4</span></div>
+        <div class="gallery-item"><span>5</span></div>
+        <div class="gallery-item"><span>6</span></div>
+        <div class="gallery-item"><span>7</span></div>
+        <div class="gallery-item"><span>8</span></div>
+        <div class="gallery-item"><span>9</span></div>
+        <div class="gallery-item"><span>10</span></div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque voluptas consectetur mollitia minima! A, recusandae natus, alias molestiae nam adipisci, earum officia ea deleniti excepturi maxime fugiat praesentium consequatur odio exercitationem consectetur ipsa quidem. Laboriosam unde aut necessitatibus tenetur commodi sit! Ab corporis debitis saepe nam aliquid explicabo sunt quibusdam, quos nemo totam, deleniti esse cum excepturi itaque, recusandae fuga. Sint quidem obcaecati aliquam, praesentium necessitatibus dolorem dolor fugit blanditiis in at debitis tempora error, adipisci architecto, dolores cumque quod voluptates! Impedit mollitia eum repellendus natus officia, ea dolores quisquam doloribus repellat, quaerat quod eaque a tempora in nostrum possimus quas accusamus minus ratione beatae quam incidunt neque unde? Reiciendis consectetur sed pariatur autem similique ad impedit quasi numquam, dolore, quae vero libero, ut voluptatibus molestiae quo nisi iusto incidunt corporis? Repudiandae fugit cumque, alias deleniti cupiditate tempora natus veniam doloremque fuga error doloribus facilis quam assumenda dolores mollitia ad rerum quos et reiciendis laborum dolorum nemo odit ab. Ut suscipit quod, qui alias saepe dolor accusamus tenetur harum repudiandae similique? Cum animi enim quidem consequuntur incidunt quos dolore consectetur culpa. Amet quasi, repudiandae voluptatibus dolorum corrupti itaque ipsa aut velit, autem accusantium asperiores? Odio sapiente iusto rerum est ea?</p>
+</body>
+</html>
